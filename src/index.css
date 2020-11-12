@@ -22,3 +22,63 @@ nav {
   font-size: 20px;
   box-shadow: 0 2px 5px #888888;
 }
+.nav__username {
+  margin: 0px 20px;
+}
+.nav__username a{
+  color: #fff;
+  text-decoration: none;
+}
+nav #user-dp {
+  height: 40px;
+}
+nav .user {
+  display: flex;
+  align-items: center;
+}
+nav span {
+  margin-left: 10px;
+}
+nav .nav__links ul {
+  display: flex;
+  list-style-type: none;
+}
+nav .nav__links ul li {
+  padding: 0 4px;
+}
+.nav__links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav .nav__links ul li a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+.nav__search {
+  flex-grow: 0.5;
+  position: relative;
+  display: flex;
+  margin: 0 20px;
+}
+.nav__search input {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 31px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+.search-container input:focus {
+  outline: none;
+}
+.search-icon {
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 7px;
+}

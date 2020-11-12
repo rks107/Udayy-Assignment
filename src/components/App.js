@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import { Navbar } from "./";
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import { Navbar, Home, Page404 } from "./";
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 
+
+const signin = () => {
+  return <div>signin</div>;
+};
+const signup = () => {
+  return <div>signup</div>;
+};
 
 class App extends Component {
   render() {
@@ -10,6 +17,21 @@ class App extends Component {
         <div>
           <Navbar />
         </div>
+
+        
+
+        <Switch>
+          <Route
+            exact
+            path='/'
+            render={(props) => {
+              return <Home {...props} />;
+            }}
+          />
+          <Route exact path='/signin' component={signin} />
+          <Route exact path='/signup' component={signup} />
+          <Route component={Page404} />
+        </Switch>
       </Router>
     );
   }
